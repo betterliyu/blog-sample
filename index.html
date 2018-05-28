@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<style>
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  .header {
+  }
+  .banner-wrap {
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+    background: black;
+  }
+  .banner {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+  }
+  .overlay {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,rgba(5, 5, 49, .4), rgba(5, 5, 49, .7));
+  }
+</style>
+
+<body>
+  <div class="header">
+    <div class="nav nav-top">
+      <a href="/" class="site-logo">
+        <img src="http://ouvy2mvib.bkt.clouddn.com/banner-333.png" alt="">
+      </a>
+      <div class="header-navigation pull-right font-transform-inherit">
+        <ul>
+          <li>
+            <!-- <a href="">首页</a>
+          </li>
+          <a href="">博客</a>
+          </li>
+          <a href="">作品</a>
+          </li>
+          <a href="">关于</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+    <div class="banner-wrap">
+      <div class="banner"></div>
+      <!-- <img class="banner" src="./laptop-2838921_1920.jpg"/> -->
+      <div class="overlay"></div>
+    </div>
+    <div class="nav nav-sec">
+        <!-- <div class="header-navigation pull-right font-transform-inherit">
+          <ul>
+            <li>
+              <a href="">首页</a>
+            </li>
+            <a href="">博客</a>
+            </li>
+            <a href="">作品</a>
+            </li>
+            <a href="">关于</a>
+            </li>
+          </ul>
+        </div> -->
+      </div>
+  </div>
+</body>
+
+</html>
