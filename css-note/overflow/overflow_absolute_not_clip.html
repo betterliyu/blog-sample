@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>absolute导致overflow剪裁失效</title>
+    <style>
+      .wrap {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border: 3px solid aquamarine;
+      }
+      .wrap>img {
+        position: absolute;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>图片大小超出容器并且设置为绝对定位，容器overflow为hidden，但是图片未被剪裁。</p>
+    <div class="wrap">
+      <img src="./0e613c45c8922df158aca088527e4d65.jpg">
+    </div>
+  </body>
+
+</html>

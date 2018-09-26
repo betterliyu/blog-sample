@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>absolute导致overflow滚动失效</title>
+    <style>
+      .wrap {
+        width: 300px;
+        height: 300px;
+        overflow: auto;
+        border: 3px solid aquamarine;
+      }
+
+      .wrap>img {
+        position: absolute;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>图片设置为绝对定位，容器overflow为auto，容器滚动时，其他内容会跟随滚动，但是绝对定位元素不会跟随滚动。</p>
+    <div class="wrap w2">
+      <img src="./0e613c45c8922df158aca088527e4d65.jpg">
+      <div>
+        这是其他内容，不是绝对定位。
+        这是其他内容，不是绝对定位。
+        这是其他内容，不是绝对定位。
+        这是其他内容，不是绝对定位。
+        这是其他内容，不是绝对定位。
+        这是其他内容，不是绝对定位。
+        这是其他内容，不是绝对定位。
+        这是其他内容，不是绝对定位。
+        这是其他内容，不是绝对定位。
+        这是其他内容，不是绝对定位。
+        这是其他内容，不是绝对定位。
+        这是其他内容，不是绝对定位。
+        这是其他内容，不是绝对定位。
+        这是其他内容，不是绝对定位。
+        这是其他内容，不是绝对定位。
+        这是其他内容，不是绝对定位。
+        这是其他内容，不是绝对定位。
+        这是其他内容，不是绝对定位。
+        这是其他内容，不是绝对定位。
+        这是其他内容，不是绝对定位。
+        这是其他内容，不是绝对定位。
+        这是其他内容，不是绝对定位。
+        这是其他内容，不是绝对定位。
+      </div>
+    </div>
+  </body>
+
+</html>
