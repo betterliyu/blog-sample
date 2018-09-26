@@ -9,35 +9,42 @@
 </head>
 
 <style>
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
   .wrap {
     width: 100%;
+    height: 100%;
   }
 
   .left {
     float: left;
     width: 200px;
-    height: 200px;
-    display: inline-block;
+    height: 100%;
+  }
+  .left>img {
+    width: 100%;
   }
 
   .right {
-    background: #ccc;
+    height: 100%;
+    padding-left: 10px;
+    overflow: hidden;
+    background: #eee;
   }
-  .right div {
+  .right img {
     width: 200px;
-    height: 160px;
-    background: #0df;
   }
 </style>
 
 <body>
   <div class="wrap">
     <div class="left">
-      left
+      <img src="./0e613c45c8922df158aca088527e4d65.jpg">
     </div>
     <div class="right">
-      <div>right</div>
-      <div>right</div>
+      <img src="./ffc0eb8e5b53dd2983b40e133c12d28c.jpg">
     </div>
   </div>
 </body>
